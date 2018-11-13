@@ -1,0 +1,4 @@
+source https://www.nuget.org/api/v2
+clitool dotnet-fable
+nuget Fable.Core
+nuget Fable.Import.Browser
