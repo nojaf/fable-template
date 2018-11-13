@@ -19,10 +19,12 @@
                 "**/.gitignore",
                 ".paket/paket.exe",
                 ".paket/.store/**/*",
-                "paket-files",
-                "packages",
-                "node_modules",
-                "output/**/*.js"
+                ".fable/**",
+                "paket-files/**",
+                "packages/**",
+                "node_modules/**",
+                "output/**/*.js",
+                "output/*.js"
             ]
         }
     ],
