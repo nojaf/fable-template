@@ -18,4 +18,4 @@ Start dev server with `dotnet fable npm-run start`.
 
 This launches Fable-daemon and compiles files in `src\App.fsproj` to the `output` folder.
 
-It also starts [browser-sync](https://browsersync.io/) to serve all files located in the output folder.
+It also starts [parcel](https://parceljs.org) to serve all files located in the output folder and [jest](https://jestjs.io/) to run unit tests.
