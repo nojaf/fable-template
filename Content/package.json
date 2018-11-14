@@ -5,16 +5,22 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.1.5",
-    "browser-sync": "^2.26.3",
+    "@babel/core": "7.1.5",
+    "@babel/plugin-transform-modules-commonjs": "7.1.0",
+    "parcel": "1.10.3",
     "concurrently": "^4.0.1",
-    "fable-splitter": "^2.0.2"
+    "fable-splitter": "^2.0.2",
+    "jest": "23.6.0"
   },
   "scripts": {
     "postinstall": "dotnet restore",
-    "build": "fable-splitter src\\FableProject.fsproj --outDir output",
-    "watch": "npm run build -- --watch",
-    "sync":"browser-sync start -s output --extensions js -w --files *.*",
-    "start": "concurrently \"npm run watch\" \"npm run sync\""
+    "compile": "fable-splitter src\\FableProject.fsproj --config splitter.config.js",
+    "compile:watch": "npm run compile -- --watch",
+    "bundle": "parcel build output/index.html",
+    "bundle:watch": "parcel serve output/index.html",
+    "prestart" : "npm run compile",
+    "start": "concurrently \"npm run compile:watch\" \"npm run bundle:watch\" \"npm run test:watch\"",
+    "test" : "jest",
+    "test:watch" : "jest --watchAll"
   }
 }

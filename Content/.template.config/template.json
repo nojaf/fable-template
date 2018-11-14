@@ -24,7 +24,10 @@
                 "packages/**",
                 "node_modules/**",
                 "output/**/*.js",
-                "output/*.js"
+                "output/*.js",
+                ".cache/**",
+                "dist/**",
+                "*.ps1"
             ]
         }
     ],
