@@ -334,3 +334,4 @@ Content/output/**/*.js
 .cache/
 dist/
 reinstall.ps1
+paket.exe

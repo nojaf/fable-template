@@ -18,7 +18,7 @@ Installs node and dotnet dependencies.
 ## Develop
 
 > cd src
-> dotnet fable yarn-run start
+> dotnet fable yarn-start
 
 Starts Fable daemon (compile F# to js), bundles and serves with [parcel](https://parceljs.org/) and watches unit tests with [Jest](https://jestjs.io).
 

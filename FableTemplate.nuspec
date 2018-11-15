@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>Fable.Template.nojaf</id>
-        <version>0.2.0</version>
+        <version>0.2.1</version>
         <description>Minimal template for using Fable 2.</description>
         <authors>nojaf</authors>
         <language>en-US</language>
@@ -18,6 +18,7 @@
     	<file src="Content\.paket\Paket.Restore.targets" target="content\.paket" />
         <file src="Content\.template.config\template.json" target="content\.template.config" />
         <file src="Content\output\index.html" target="content\output" />
+        <file src="Content\output\fable.ico" target="content\output" />
         <file src="Content\src\*.fs" target="content\src" />
         <file src="Content\src\*.fsproj" target="content\src" />
         <file src="Content\src\paket.references" target="content\src" />
