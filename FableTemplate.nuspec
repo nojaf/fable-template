@@ -3,18 +3,30 @@
     <metadata>
         <id>Fable.Template.nojaf</id>
         <version>0.1.0</version>
-        <description>Minimal template for using fable 2.</description>
+        <description>Minimal template for using Fable 2.</description>
         <authors>nojaf</authors>
         <language>en-US</language>
-        <projectUrl></projectUrl>
+        <projectUrl>https://github.com/nojaf/fable-template</projectUrl>
         <licenseUrl>https://github.com/nojaf/fable-template/blob/master/LICENSE</licenseUrl>
-        <tags>functional web elmish f# fsharp template</tags>
+        <tags>functional web fable f# fsharp template</tags>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <packageTypes>
             <packageType name="Template" />
         </packageTypes>
     </metadata>
 	<files>
-    	<file src="Content\**\*" target="content" />
+    	<file src="Content\.paket\Paket.Restore.targets" target="content\.paket" />
+        <file src="Content\.template.config\template.json" target="content\.template.config" />
+        <file src="Content\output\index.html" target="content\output">
+        <file src="Content\src\*.fs" target="content\src" />
+        <file src="Content\src\*.fsproj" target="content\src" />
+        <file src="Content\src\paket.references" target="content\src" />
+        <file src="Content\*.sln" target="content" />
+        <file src="Content\package.json" target="content" />
+        <file src="Content\paket.dependencies" target="content" />
+        <file src="Content\paket.lock" target="content" />
+        <file src="Content\README.md" target="content" />
+        <file src="Content\splitter.config.js" target="content" />
+        <file src="Content\yarn.lock" target="content" />
     </files>
 </package>
