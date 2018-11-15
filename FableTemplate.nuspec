@@ -28,5 +28,6 @@
         <file src="Content\README.md" target="content" />
         <file src="Content\splitter.config.js" target="content" />
         <file src="Content\yarn.lock" target="content" />
+        <file src="Content\.npmrc" target="content" />
     </files>
 </package>
