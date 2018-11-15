@@ -2,4 +2,7 @@ source https://www.nuget.org/api/v2
 clitool dotnet-fable
 nuget Fable.Core
 nuget Fable.Import.Browser
-nuget Fable.Import.Jest
+# nuget Fable.Import.Jest // Use when ready for Fable2
+github nojaf/fable-jest:fable2 fable/Bindings.fs
+github nojaf/fable-jest:fable2 fable/Exports.fs
+github nojaf/fable-jest:fable2 fable/Matchers.fs

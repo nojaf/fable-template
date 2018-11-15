@@ -4,6 +4,18 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="..\paket-files\nojaf\fable-jest\fable\Bindings.fs">
+      <Paket>True</Paket>
+      <Link>paket-files/Bindings.fs</Link>
+    </Compile>
+    <Compile Include="..\paket-files\nojaf\fable-jest\fable\Exports.fs">
+      <Paket>True</Paket>
+      <Link>paket-files/Exports.fs</Link>
+    </Compile>
+    <Compile Include="..\paket-files\nojaf\fable-jest\fable\Matchers.fs">
+      <Paket>True</Paket>
+      <Link>paket-files/Matchers.fs</Link>
+    </Compile>
     <Compile Include="Library.fs" />
     <Compile Include="Library.test.fs" />
     <Compile Include="App.fs" />

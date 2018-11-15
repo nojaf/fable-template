@@ -16,10 +16,12 @@
     "postinstall": "dotnet restore",
     "compile": "fable-splitter src\\FableProject.fsproj --config splitter.config.js",
     "compile:watch": "npm run compile -- --watch",
+    "prebundle": "npm run compile",
     "bundle": "parcel build output/index.html",
     "bundle:watch": "parcel serve output/index.html",
     "prestart" : "npm run compile",
     "start": "concurrently \"npm run compile:watch\" \"npm run bundle:watch\" \"npm run test:watch\"",
+    "pretest" : "npm run compile",
     "test" : "jest",
     "test:watch" : "jest --watchAll"
   }

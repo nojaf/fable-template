@@ -1,4 +1,7 @@
 dotnet-fable
 Fable.Core
 Fable.Import.Browser
-Fable.Import.Jest
+# Fable.Import.Jest
+File: Bindings.fs
+File: Exports.fs
+File: Matchers.fs
