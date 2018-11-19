@@ -7,22 +7,24 @@
   "devDependencies": {
     "@babel/core": "7.1.5",
     "@babel/plugin-transform-modules-commonjs": "7.1.0",
-    "parcel": "1.10.3",
     "concurrently": "^4.0.1",
     "fable-splitter": "^2.0.2",
-    "jest": "23.6.0"
+    "jest": "23.6.0",
+    "parcel": "1.10.3",
+    "rimraf": "^2.6.2"
   },
   "scripts": {
     "postinstall": "dotnet restore",
+    "precompile": "rimraf \"{output/*.!(html|ico),output/*/}\"",
     "compile": "fable-splitter src\\FableProject.fsproj --config splitter.config.js",
     "compile:watch": "npm run compile -- --watch",
     "prebundle": "npm run compile",
     "bundle": "parcel build output/index.html",
     "bundle:watch": "parcel serve output/index.html",
-    "prestart" : "npm run compile",
+    "prestart": "npm run compile",
     "start": "concurrently \"npm run compile:watch\" \"npm run bundle:watch\" \"npm run test:watch\"",
-    "pretest" : "npm run compile",
-    "test" : "jest",
-    "test:watch" : "jest --watchAll"
+    "pretest": "npm run compile",
+    "test": "jest",
+    "test:watch": "jest --watchAll"
   }
 }
