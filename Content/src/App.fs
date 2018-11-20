@@ -12,9 +12,9 @@ let ctx = canvas.getContext_2d()
 ctx.clearRect(0.,0.,canvas.width,canvas.height)
 
 ctx.beginPath()
-ctx.moveTo(70., 90.)
-ctx.lineTo(120., 15.)
-ctx.lineTo(170., 90.)
+ctx.moveTo(80., 85.)
+ctx.lineTo(130., 10.)
+ctx.lineTo(180., 85.)
 ctx.fillStyle <- !^"rgba(46, 49, 49, 0.40)"
 ctx.fill()
 
