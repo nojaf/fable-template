@@ -1,4 +1,4 @@
 Fable.Import.Browser
-File:Bindings.fs
-File:Exports.fs
-File:Matchers.fs
+File: Bindings.fs Jest
+File: Exports.fs Jest
+File: Matchers.fs Jest

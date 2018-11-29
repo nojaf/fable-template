@@ -6,15 +6,15 @@
   <ItemGroup>
     <Compile Include="..\paket-files\nojaf\fable-jest\fable\Bindings.fs">
       <Paket>True</Paket>
-      <Link>paket-files/Bindings.fs</Link>
+      <Link>Jest/Bindings.fs</Link>
     </Compile>
     <Compile Include="..\paket-files\nojaf\fable-jest\fable\Exports.fs">
       <Paket>True</Paket>
-      <Link>paket-files/Exports.fs</Link>
+      <Link>Jest/Exports.fs</Link>
     </Compile>
     <Compile Include="..\paket-files\nojaf\fable-jest\fable\Matchers.fs">
       <Paket>True</Paket>
-      <Link>paket-files/Matchers.fs</Link>
+      <Link>Jest/Matchers.fs</Link>
     </Compile>
     <Compile Include="Library.fs" />
     <Compile Include="Library.test.fs" />

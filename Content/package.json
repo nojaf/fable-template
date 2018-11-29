@@ -5,27 +5,25 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "7.1.5",
+    "@babel/core": "7.1.6",
     "@babel/plugin-transform-modules-commonjs": "7.1.0",
-    "concurrently": "4.0.1",
-    "fable-compiler-dotnet": "2.1.0-beta-002",
-    "fable-splitter": "2.1.0-beta-002",
+    "fable-compiler": "2.1.0",
+    "fable-splitter": "2.1.0",
     "jest": "23.6.0",
     "parcel": "1.10.3",
-    "rimraf": "2.6.2"
+    "rimraf": "2.6.2",
+    "concurrently": "4.1.0"
   },
   "scripts": {
     "postinstall": "dotnet restore",
-    "clean": "rimraf \"{output/*.!(html|ico),output/*/,dist/}\"",
-    "compile": "fable-splitter src\\FableProject.fsproj --config splitter.config.js --allFiles",
+    "clean": "rimraf \"{output/*.!(html|ico),output/*/,dist/,.cache/,.fable/}\"",
+    "compile": "fable-splitter src\\FableProject.fsproj --config splitter.config.js",
     "compile:watch": "npm run compile -- --watch",
     "prebundle": "npm run compile",
     "bundle": "parcel build output/index.html",
-    "bundle:watch": "parcel serve output/index.html",
-    "prestart": "npm run compile",
-    "start": "concurrently \"npm run compile:watch\" \"npm run bundle:watch\" \"npm run test:watch\"",
-    "pretest": "npm run compile",
+    "bundle:watch": "parcel serve output/index.html --port 8080",
     "test": "jest",
-    "test:watch": "jest --watchAll"
+    "test:watch": "jest --watchAll",
+    "start":"concurrently \"npm run compile:watch\" \"npm run bundle:watch\""
   }
 }

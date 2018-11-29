@@ -1,5 +1,7 @@
 # Minimal fable template
 
+<img src="screenshot.png" />
+
 ## Install
 
 > dotnet new -i Fable.Template.nojaf
@@ -18,10 +20,28 @@ Installs node and dotnet dependencies.
 
 ## Develop
 
-> cd src
+> yarn start
 
-> dotnet fable yarn-start
+Starts Fable (compile F# to js) and [parcel](https://parceljs.org/) (bundles and serves files).
 
-Starts Fable daemon (compile F# to js), bundles and serves with [parcel](https://parceljs.org/) and watches unit tests with [Jest](https://jestjs.io).
+Open [http://localhost:8080](http://localhost:8080) to access the dev server.
 
-Open [http://localhost:1234](http://localhost:1234) to access the dev server.
+## Unit test
+
+> yarn test
+
+Or
+
+> yarn test:watch
+
+Calls `jest` to run the tests in the compiled files. (Run `yarn compile` first if no JS files are present in `output` folder).
+
+Most likely you want to run tests and see something in your browser.
+Run `yarn start` in one console and `yarn test:watch` in another.
+This is handy to see both Fable compilation errors as well as unit test issues at the same time.
+
+## Clean
+
+> yarn clean
+
+Remove caches and compiled JS
