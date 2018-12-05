@@ -335,3 +335,4 @@ Content/output/**/*.js
 dist/
 reinstall.ps1
 paket.exe
+instructions.md
