@@ -21,6 +21,7 @@
     "compile:watch": "npm run compile -- --watch",
     "prebundle": "npm run compile",
     "bundle": "parcel build output/index.html",
+    "prebundle:watch": "echo console.log('waiting for parcel') > \"output\\App.js\"",
     "bundle:watch": "parcel serve output/index.html --port 8080",
     "test": "jest",
     "test:watch": "jest --watchAll",

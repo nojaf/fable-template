@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>Fable.Template.nojaf</id>
-        <version>0.3.1</version>
+        <version>0.3.2</version>
         <description>Minimal template for using Fable 2.1</description>
         <authors>nojaf</authors>
         <language>en-US</language>

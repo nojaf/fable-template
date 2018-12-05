@@ -1,6 +1,5 @@
 module FableProject.App
 
-open FableProject.Library
 open Fable.Core.JsInterop
 open Fable.Import.Browser
 
