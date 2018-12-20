@@ -17,7 +17,7 @@
   "scripts": {
     "postinstall": "dotnet restore",
     "clean": "rimraf \"{output/*.!(html|ico),output/*/,dist/,.cache/,.fable/}\"",
-    "compile": "fable-splitter src\\FableProject.fsproj --config splitter.config.js",
+    "compile": "fable-splitter --config splitter.config.js",
     "compile:watch": "npm run compile -- --watch",
     "prebundle": "npm run compile",
     "bundle": "parcel build output/index.html",

@@ -11,10 +11,8 @@ Requires local installation of [Paket](https://www.nuget.org/packages/Paket/) if
 
 ## Development
 
-Open a prompt in the `src` folder.
-Execute `dotnet restore` so you can run `dotnet fable`.
 
-Start dev server with `dotnet fable npm-run start`. 
+Start dev server with `npm start`. 
 
 This launches Fable-daemon and compiles files in `src\App.fsproj` to the `output` folder.
 

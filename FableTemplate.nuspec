@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>Fable.Template.nojaf</id>
-        <version>0.3.2</version>
+        <version>0.3.3</version>
         <description>Minimal template for using Fable 2.1</description>
         <authors>nojaf</authors>
         <language>en-US</language>
@@ -29,6 +29,7 @@
         <file src="Content\README.md" target="content" />
         <file src="Content\splitter.config.js" target="content" />
         <file src="Content\yarn.lock" target="content" />
+        <file src="Content\.gitignore" target="content" />
         <file src="Content\.npmrc" target="content" />
     </files>
 </package>
